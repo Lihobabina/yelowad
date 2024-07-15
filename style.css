@@ -2588,7 +2588,7 @@ transition: all ease 0.2s;
   }
   .map_banner .container .map_half{
     width: 100%;
-    height: 250px;
+    height: 450px;
   }
   .home_banner{
     height: auto;
@@ -2618,6 +2618,14 @@ transition: all ease 0.2s;
   .ads_banner .container a{
     font-size: 20px;
   }
+  .ads_banner .container{
+   max-width: 330px;
+   margin-left: auto;
+   margin-right: auto;
+    background: url(https://res.cloudinary.com/parallax-agency/image/upload/c_fill,q_70,f_auto,w_900,h_650/statamic/clear-channel-v3-kbuild-production/love-cocoa_519338_179864_44359_w1t-4tw-3-1659433893.jpg) no-repeat;
+    background-size: cover;
+    height: 450px;
+  }
   .gm-style-mtc-bbw{
     display: none!important;
   }
@@ -2637,5 +2645,8 @@ transition: all ease 0.2s;
   .footer_block{
     flex-direction: column;
     padding: 0;
+  }
+  .pricing::after{
+    display: none!important;
   }
 }
