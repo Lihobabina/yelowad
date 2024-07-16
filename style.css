@@ -2768,4 +2768,26 @@ transition: all ease 0.2s;
   .about_content .row .flex_column{
     width: 100%;
   }
+  details{
+    min-height: 1px!important;
+  }
+  fieldset details ul{
+    padding-left: 0;
+  }
+  .contact .col2 form fieldset details ul span{
+    font-size: 16px;
+  }
+  fieldset details ul li label{
+    font-size: 14px;
+    width: 80%;
+  }
+  details summary{
+    font-size: 14px;
+  }
+  fieldset details{
+    padding: 15px!important;
+  }
+  fieldset{
+    height: auto;
+  }
 }
