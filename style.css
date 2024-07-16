@@ -92,6 +92,47 @@ font-size: 18px;
 line-height: 19px;
 transition: all ease 0.3s;
 }
+.about_page .banner{
+  width: 100%;
+  padding: 40px 0;
+  background: url(https://images.unsplash.com/photo-1422393462206-207b0fbd8d6b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.about_page .banner::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0000005e;
+  backdrop-filter: blur(1px);
+}
+.about_content .flex_between{
+  column-gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.about_content p{
+  font-size: 20px;
+}
+.about_page h2{
+  text-align: center;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 2;
+  color: #FFFFFF;
+  font-size: 25px;
+}
+
+.about_content .row .flex_column{
+  row-gap: 15px;
+  width: 60%;
+}
 header .container nav a:hover{
   text-decoration: underline;
 }
@@ -665,13 +706,28 @@ justify-content: center;
     position: relative;
     margin: 40px 0 100px 0; 
     background-color: #c8c7c8;
+    /* max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto; */
+    max-height: 490px;
+  }
+  .benefits .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    /* position: relative;
+    margin: 40px 0 100px 0; 
+    background-color: #c8c7c8;
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
+    max-height: 490px; */
   }
   .benefits video{
-    width: 50%;
-    height: auto;
+   max-width: 290px;
+   width: 100%;
+   max-height: 490px;
+   height: 100%;
     object-fit: cover;
     clip-path: none;
     position: relative;
@@ -681,22 +737,21 @@ justify-content: center;
     z-index: 1;
   }
   .benefits .flex_column{
-    width: 50%;
-    row-gap: 15px;
+    row-gap: 10px;
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
   }
   .benefits .flex_column h2{
-    margin-top: 25px;
-    font-size: 24px;
+    /* margin-top: 25px; */
+    font-size: 22px;
     line-height: 1.1;
   }
   .benefits .flex_column span{
     color: #E00000;
   }
   .benefits .col{
-    font-size: 20px;
+    font-size: 15px;
   }
   .topics{
     margin-bottom: 100px;
@@ -845,7 +900,7 @@ justify-content: center;
   /* career_banner */
   .career_banner {
     width: 100%;
-    height: 600px;
+    height: 500px;
     position: relative;
     overflow: hidden;
     background-color: #fafafa;
@@ -861,7 +916,7 @@ justify-content: center;
         z-index: 2;
   }
   .career_banner img{
-    width: 51%;
+    width: 45%;
     object-fit: cover;
     height: auto;
     position: absolute;
@@ -1851,7 +1906,7 @@ width: 100%;
 }
 .values .flex_between .col{
   width: 45%;
-  height: 175px;
+  height: 150px;
 }
 .values .flex_between .col span{
 font-family: 'Aeonik';
@@ -2057,20 +2112,16 @@ margin: 24px 0;
 
 .daily_banner{
   width: 100%;
-  padding: 60px 0;
-  background: rgb(248,210,10);
-  background: radial-gradient(circle, rgba(248,210,10,0.8288048495765494) 0%, rgba(255,232,0,0) 100%); 
+ padding-top: 80px;
+  /* background: rgb(248,210,10);
+  background: radial-gradient(circle, rgba(248,210,10,0.8288048495765494) 0%, rgba(255,232,0,0) 100%);  */
 }
 .daily_banner h2{
   font-size: 40px;
   margin-bottom: 25px;
-  text-align: center;
 }
 .daily_banner p{
   width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
 }
 .about-cards {
   overflow: hidden;
@@ -2078,18 +2129,42 @@ margin: 24px 0;
   /* border-bottom: 1px solid #E6E6E6; */
 }
 .about-cards__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
 justify-content: space-between;
   row-gap: 32px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   position: relative;
   z-index: 2;
-  max-height: 800px;
+}
+.about-cards__row li{
+  width: 100%;
+  padding-left: 30px;
+  list-style: none;
+  position: relative;
+  margin-bottom: 20px;
+}
+.about-cards__row div{ 
+  width: 80%;
+}
+.about-cards__row .flex_column{
+  width: 30%;
+}
+.about-cards__row video{
+  width: 100%;
+  height: 390px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+.about-cards__row li::after{
+  content: url(img/check.png);
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  border-radius: 50%;
+  background-color: #FAC63E;
+  position: absolute;
+  left: 2px;
+  top: 5px;
 }
 /* @media (max-width: 991px) {
   .about-cards__row {
@@ -2198,7 +2273,7 @@ transition: all ease 0.2s;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 64px;
+  padding-bottom: 30px;
 }
 /* @media (max-width: 991px) {
   .about-cards__header {
@@ -2392,12 +2467,11 @@ transition: all ease 0.2s;
 .sectors .flex_between{
   column-gap: 50px;
   margin-bottom: 30px;
+  flex-direction: column;
+  row-gap: 20px;
 }
 .sectors .flex_between p{
   font-size: 20px;
-}
-.sectors .flex_between p:last-of-type{
-  text-align: right;
 }
 .sectors .p_sector{
   text-align: center;
@@ -2648,5 +2722,50 @@ transition: all ease 0.2s;
   }
   .pricing::after{
     display: none!important;
+  }
+  .daily_banner{
+    padding-top: 30px;
+  }
+  .about-cards__row{
+    flex-direction: column;
+  }
+  .about-cards__row div {
+    width: 100%;
+  }
+  .about-cards__row .flex_column {
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .join_daily{
+    margin-top: 0;
+  }
+  .about-cards__row{
+    padding-bottom: 0;
+  }
+  .benefits .container{
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .benefits {
+    padding: 0!important;
+    max-height: 100%;
+  }
+  .about_page h2{
+    width: 100%;
+    font-size: 22px;
+  }
+  .about_page .banner {
+    padding: 40px 20px;
+  }
+  .about_content .flex_between{
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  .about_content .row{
+    flex-direction: column-reverse;
+  }
+  .about_content .row .flex_column{
+    width: 100%;
   }
 }
