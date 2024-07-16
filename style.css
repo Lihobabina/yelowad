@@ -115,8 +115,12 @@ transition: all ease 0.3s;
   margin-top: 30px;
   margin-bottom: 30px;
 }
+.about_content {
+  padding: 20px 0;
+}
 .about_content p{
   font-size: 20px;
+  margin-bottom: 20px;
 }
 .about_page h2{
   text-align: center;
@@ -126,7 +130,7 @@ transition: all ease 0.3s;
   position: relative;
   z-index: 2;
   color: #FFFFFF;
-  font-size: 25px;
+  font-size: 26px;
 }
 
 .about_content .row .flex_column{
@@ -709,7 +713,7 @@ justify-content: center;
     /* max-width: 1280px;
     margin-left: auto;
     margin-right: auto; */
-    max-height: 490px;
+    /* max-height: 490px; */
   }
   .benefits .container{
     display: flex;
@@ -724,7 +728,7 @@ justify-content: center;
     max-height: 490px; */
   }
   .benefits video{
-   max-width: 290px;
+   max-width: 340px;
    width: 100%;
    max-height: 490px;
    height: 100%;
@@ -751,7 +755,7 @@ justify-content: center;
     color: #E00000;
   }
   .benefits .col{
-    font-size: 15px;
+    font-size: 17px;
   }
   .topics{
     margin-bottom: 100px;
