@@ -1452,7 +1452,279 @@
     line-height: 1.1;
   }
   }
-
+  @media (min-width: 1300px) {
+    .home_banner{
+      overflow: visible;
+    }
+  }
+  @media (max-width: 950px) {
+    .home_banner .container, .home_page-video {
+      height: 400px;
+    }
+    .h_cont{
+      padding-left: 20px;
+    }
+    .map_banner{
+      margin-top: 0;
+    }
+    .map_banner .container .btn_accent {
+      right: 34%;
+    }
+    .map_banner .container .map_half, .map_banner .container video{
+      height: 400px;
+    }
+    .home_banner .container .col h2{
+      font-size: 40px;
+    }
+    .h_cont {
+      height: 48px;
+    }
+    .home_page-video {
+      width: 57%;
+    }
+    header .container nav{
+      display: none;
+    }
+    header .container a.btn_accent{
+      display: none;
+    
+    }
+    .burger_menu{
+      display: flex;
+      flex-direction: column;
+      row-gap: 4px;
+    }
+    .burger_menu div{
+      width: 25px;
+      height: 2px;
+      border-radius: 100px;
+      background: #FAC63E;
+      transition: all ease 0.3s;
+    }
+    .burger_menu.active div:nth-of-type(1){
+      transform: rotate(45deg) translateY(8px);
+    }
+    .burger_menu.active div:nth-of-type(2){
+     opacity: 0;
+    }
+    .burger_menu.active div:nth-of-type(3){
+      transform: rotate(-45deg) translateY(-8px);
+    }
+    .mob_menu nav a{
+      text-align: center;
+      padding: 10px 0;
+    }
+    .mob_menu.active{
+      transform: translateY(97px);
+    }
+    .mob_menu{
+      transform: translateY(-100%);
+      transition: all ease 0.3s;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 15px 0 30px 0;
+      background: #ffffffe3;
+      z-index: 21;
+    }
+    .mob_menu a.btn_accent{
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      width: 60%;
+    }
+    .footer__col3{
+      flex-direction: column;
+      row-gap: 15px;
+    }
+    .footer_block a{
+      text-align: center;
+    }
+  }
+  @media (max-width: 720px) {
+    .home_banner .container .col{
+      width: 100%;
+    }
+    .home_banner{
+      margin-top: 0;
+    }
+    .home_banner .container .col h2 {
+      font-size: 28px;
+      text-align: center;
+    }
+    .home_banner .container .col{
+      height: 136px;
+    }
+    .home_banner .container{
+      flex-direction: column;
+    }
+    .home_page-video {
+      width:100%;
+      height: 250px;
+      object-fit: cover;
+      clip-path: none;
+      position: relative;
+      top: auto;
+      right: auto;
+      z-index: -1;
+    }
+    .h_cont {
+      height: 34px;
+      padding-left: 0;
+    }
+    .home_banner .container .col {
+      margin-top: 30px;
+    }
+    .home_banner .container{
+      height: auto;
+    }
+    .map_banner .container{
+      flex-direction: column;
+    }
+    .map_banner .container .map_half{
+      width: 100%;
+      height: 450px;
+    }
+    .home_banner{
+      height: auto;
+    }
+    .map_banner .container video{
+      width: 100%;
+      height: auto;
+    }
+    .map_banner .container .btn_accent{
+      width:calc(100% - 40px);
+      right: 20px;
+      height: 55px;
+      font-size: 20px;
+      bottom: 4%;
+    }
+    .ads_banner .container h1{
+      font-size: 40px;
+      line-height: 1;
+    }
+    .ads_banner .container{
+      padding: 40px 0;
+    }
+    .ads_banner{
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
+    .ads_banner .container a{
+      font-size: 20px;
+    }
+    .ads_banner .container{
+     max-width: 330px;
+     margin-left: auto;
+     margin-right: auto;
+      background: url(https://res.cloudinary.com/parallax-agency/image/upload/c_fill,q_70,f_auto,w_900,h_650/statamic/clear-channel-v3-kbuild-production/love-cocoa_519338_179864_44359_w1t-4tw-3-1659433893.jpg) no-repeat;
+      background-size: cover;
+      height: 450px;
+    }
+    .gm-style-mtc-bbw{
+      display: none!important;
+    }
+    #map span{
+      display: none!important;
+    }
+    .sectors .flex_between{
+      display: none;
+    }
+    .sectors .p_sector{
+      width: 100%;
+      font-size: 20px;
+    }
+    .sectors h2{
+      margin-bottom: 15px;
+    }
+    .footer_block{
+      flex-direction: column;
+      padding: 0;
+    }
+    .pricing::after{
+      display: none!important;
+    }
+    .daily_banner{
+      padding-top: 30px;
+    }
+    .about-cards__row{
+      flex-direction: column;
+    }
+    .about-cards__row div {
+      width: 100%;
+    }
+    .about-cards__row .flex_column {
+      width: 78%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .join_daily{
+      margin-top: 0;
+    }
+    .about-cards__row{
+      padding-bottom: 0;
+    }
+    .benefits .container{
+      flex-direction: column-reverse;
+      padding: 0;
+    }
+    .benefits {
+      padding: 0!important;
+      max-height: 100%;
+    }
+    .about_page h2{
+      width: 100%;
+      font-size: 22px;
+    }
+    .about_page .banner {
+      padding: 40px 20px;
+    }
+    .about_content .flex_between{
+      flex-direction: column;
+      row-gap: 15px;
+    }
+    .about_content .row{
+      flex-direction: column-reverse;
+    }
+    .about_content .row .flex_column{
+      width: 100%;
+    }
+    details{
+      min-height: 1px!important;
+    }
+    fieldset details ul{
+      padding-left: 0;
+    }
+    .contact .col2 form fieldset details ul span{
+      font-size: 16px;
+    }
+    fieldset details ul li label{
+      font-size: 14px;
+      width: 80%;
+    }
+    details summary{
+      font-size: 14px;
+    }
+    fieldset details{
+      padding: 15px!important;
+    }
+    fieldset{
+      height: auto;
+    }
+    .p_daily{
+      font-size: 16px;
+      width: 100%;
+    }
+    .footer__col3{
+      flex-direction: column;
+      row-gap: 15px;
+    }
+    .footer_block a{
+      text-align: center;
+    }
+  }
+  
   @media (max-width: 550px){
       /* .container{
           max-width: 343px;
