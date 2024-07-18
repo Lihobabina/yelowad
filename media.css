@@ -1761,6 +1761,9 @@
         p{
           font-size: 14px;
         }
+        .about_content{
+          padding-top: 20px;
+        }
         .mission .container .col2{
           row-gap: 24px;
         }
